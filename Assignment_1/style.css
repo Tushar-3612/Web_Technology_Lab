@@ -1,0 +1,228 @@
+/* ===== Base Styles (same as before) ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main_form{
+  justify-content: center;
+  align-items: center;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  background-color: #3ecb0bc4;
+  color: white;
+}
+
+
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: whitesmoke;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Flexbox Hero Sections ===== */
+.hero,
+.hero-damage-report {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #e8f5e9;
+  text-align: center;
+  margin-bottom: 20px;
+  min-height: 50vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.hero-content a {
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content a:hover {
+  background-color: #1b5e20;
+}
+
+/* ===== Form Styling with Animation ===== */
+#insuranceForm,
+#damageForm {
+  background-color: white;
+  color: red;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease-out;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1b5e20;
+}
+
+/* ===== Keyframes for Form Animation ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Tweak ===== */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+
+  #insuranceForm,
+  #damageForm {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+}
+
+/* Centering the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9;
+}
+
+/* Styling the form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Styling inputs and textarea */
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+/* Styling the button */
+.contact-form button {
+  padding: 10px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: red;
+  color:black;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  border-radius: 100PX;
+  height: 60px;
+  width: 60PX;
+}
+
+
+

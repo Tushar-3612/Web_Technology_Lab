@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Insurance Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    background-color: #3ecb0bc4;
+    color: white;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main_form {
+    padding: 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.form-box {
+    width: 500px;
+    background-color: #fff3e0;  /* ✅ Changed here: new light beige background */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: red;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: whitesmoke;
+    color: red;
+
+
+}
+ 
+details {
+    margin-top: 20px;
+}
+
+summary {
+    color: #B12C00;
+    cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+    .form-box {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="main_form">
+        <header class="navbar">
+            <div class="logo-title">
+                <img src="logo.png" alt="Logo" class="logo" />
+                <h1>🌾Pick Insurance Scheme</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="form-wrapper">
+            <!-- Insurance Form -->
+            <div id="insuranceForm" class="form-box">
+                <h2 style="color: #2fbe3b">🌾Prime Minister Crop Insurance Scheme</h2>
+                <form >
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label style="color: #0015fab1;">Name:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-field">
+                            <label style="color: #0015fab1;">Mobile Number:</label>
+                            <input type="tel" required>
+                        </div>
+                    </div>
+
+                    <label style="color:  #0015fab1;">Address:</label>
+                    <input type="text" required>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+                <details>
+                    <summary><strong>📄 Click to See Required Documents</strong></summary>
+                    <h3>🟢 For Insurance Application</h3>
+                    <ul>
+                        <li>Aadhaar Card (PDF or Photo)</li>
+                        <li>Bank Passbook Copy</li>
+                        <li>Land Record (Khasra Number)</li>
+                        <li>Crop Details (if available)</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Crop Damage Form -->
+            <div id="damageForm" class="form-box">
+                <h2 style="color:#2fbe3b">Crop Damage Report Form</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label style="color: #D5451B;">Farmer Name:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-field">
+                            <label style="color: #D5451B;">Village / Tehsil:</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <label style="color: #D5451B;">Crop Name:</label>
+                    <input type="text" required>
+
+                    <label style="color: #D5451B;">Type of Damage:</label>
+                    <select name="damage_type" required>
+                        <option value="">-- Select --</option>
+                        <option value="rain">Excessive Rain</option>
+                        <option value="drought">Drought</option>
+                        <option value="pest">Pests / Diseases</option>
+                        <option value="storm">Storm / Wind</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label style="color: #D5451B;">Estimated Damage (in %):</label>
+                    <input type="number" name="damage_percent" min="0" max="100" required>
+
+                    <label style="color: #D5451B;">Upload Damage Photo:</label>
+                    <input type="file" accept="image/*">
+
+                    <input type="submit" value="Submit Report">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get("type");
+        const insuranceForm = document.getElementById("insuranceForm");
+        const damageForm = document.getElementById("damageForm");
+
+        if (type === "insurance") {
+            damageForm.style.display = "none";
+        } else if (type === "damage") {
+            insuranceForm.style.display = "none";
+        } else {
+            insuranceForm.style.display = "block";
+            damageForm.style.display = "block";
+        }
+    </script>
+</body>
+</html>
