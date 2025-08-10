@@ -1,0 +1,67 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #EEEEEE;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+ 
+ }
+ form{
+    text-align: center;
+ }
+#taskForm{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px ;
+
+}
+input[type="text"]{
+    padding: 8px;
+    font-size: 16px;
+    width: 240px;
+    color:black;
+
+}
+input[type="date"]{
+    padding:8px;
+    font-size: 16px;
+    width: 240px;
+    color: black;
+}
+button{
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: se-resize;
+    background-color: red;
+    color: black;
+   border-radius: 15px;
+ 
+    border-color: 3px solid green;
+}
+button:hover{
+        background-color: green;
+        color:white;
+        border :3px solid #EB5B00;
+        
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 20px;
+}
+th , td{
+    padding: 10px;
+    text-align: center;
+    color:red;
+    border : 4px solid #EBCBAE;
+     
+}
+.completed{
+    background-color: #c8e6c9;
+    text-decoration: line-through;
+}

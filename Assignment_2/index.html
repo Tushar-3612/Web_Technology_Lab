@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> To-Do-List</h1>
+
+    <form id="taskform">
+        <input type="text" id="taskInput" placeholder="Enter The Task" required>
+        <input type="date" id="completionDate">
+        <button type="submit"> Add Task</button>
+    </form>
+
+    <h3> Pending Task: <span id="pendingCount">0</span></h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Added Date</th>
+                <th>Completion Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="taskTable"></tbody>
+    </table>
+
+    <script>
+        const taskForm = document.getElementById("taskform");
+        const taskInput = document.getElementById("taskInput");
+        const completionDateInput = document.getElementById("completionDate");
+        const taskTable = document.getElementById("taskTable");
+        const pendingCount = document.getElementById("pendingCount");
+
+        let tasks = [];
+
+        taskForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const taskText = taskInput.value.trim();
+            const completionDate = completionDateInput.value;
+            if (taskText === "") return;
+
+            const newTask = {
+                text: taskText,
+                addedDate: new Date().toLocaleDateString(),
+                completionDate: completionDate || "Not set", 
+                completed: false
+            };
+            tasks.push(newTask);
+            taskInput.value = "";
+            completionDateInput.value = "";
+            renderTasks();
+        });
+
+        function renderTasks() {
+            taskTable.innerHTML = "";
+            tasks.forEach((task, index) => { 
+                const row = document.createElement("tr");
+                row.className = task.completed ? "completed" : "";
+
+                row.innerHTML = `
+                    <td>${task.text}</td>
+                    <td>${task.addedDate}</td>
+                    <td>${task.completionDate}</td>
+                    <td>
+                        <input type="checkbox" ${task.completed ? "checked" : ""}
+                        onchange="toggleTask(${index})">
+                        ${task.completed ? "completed" : "pending"}
+                    </td>
+                    <td>
+                        <button onclick="deleteTask(${index})">Delete</button>
+                    </td>    
+                `;
+                taskTable.appendChild(row);
+            });
+
+            updatePendingCount(); 
+        }
+
+        function toggleTask(index) {
+            tasks[index].completed = !tasks[index].completed;
+            renderTasks();
+        }
+
+        function deleteTask(index) {
+            tasks.splice(index, 1);
+            renderTasks();
+        }
+
+        function updatePendingCount() {
+            const pending = tasks.filter(task => !task.completed).length;
+            pendingCount.textContent = pending;  
+        }
+    </script>
+</body>
+</html>
