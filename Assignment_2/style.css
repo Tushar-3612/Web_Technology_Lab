@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: #EEEEEE;
+    background-color: #6330b5;
     padding: 20px;
 }
 h1{
@@ -64,4 +64,5 @@ th , td{
 .completed{
     background-color: #c8e6c9;
     text-decoration: line-through;
+
 }
