@@ -1,4 +1,4 @@
-# 📘 Data Visualization and Story Telling Laboratory
+# 📘 Web Technology Laboratory
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### 📚 Course Details:
 
-- **Course Name**   : Data Visualization and Story Telling Laboratory  
+- **Course Name**   : Web Technology Laboratory
 - **Course Code**   : SECO362  
 - **Faculty**       : Prof. H.E. Khodke  
 - **Credits**       : 1  
