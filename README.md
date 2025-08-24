@@ -14,17 +14,18 @@
 
 ### 📚 Course Details:
 
-- **Course Name**   : Web Technology Laboratory
-- **Course Code**   : SECO362  
-- **Faculty**       : Prof. H.E. Khodke  
-- **Credits**       : 1  
+- **Course Name**   : Web Technology Laboratory  
+- **Course Code**   : PCCO304
+- **Faculty**       : Prof. J.N.Kale 
+- **Credits**       : 2  
 - **Type**          : Laboratory  
+
 
 ---
 
 ### 📎 Assignment:
 
-➡️ [Click Here](https://github.com/Tusshar123/DVST)
+➡️ [Click Here][(https://github.com/Tushar-3612/Web_Technology_Lab)
 
 ---
 
