@@ -41,14 +41,6 @@ The page is simple, responsive, and mobile-friendly, ensuring accessibility for 
 - 📍 **Address:** Krishi Bhavan, Taluka Kopargaon, District Ahmednagar, Maharashtra 423601  
 - 📧 **Email:** support@kisan.gov.in  
 
----
-
-## 📢 How to Run Locally  
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
-2. Open `index.html` in your browser.  
 
 ---
 
