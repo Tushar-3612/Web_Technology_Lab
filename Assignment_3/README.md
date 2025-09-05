@@ -15,6 +15,7 @@
      * Apache → 80 → 8080 and 443 → 4433
      * MySQL → 3306 → 3307
 
+
 ---
 
 # 2) Test the Server
