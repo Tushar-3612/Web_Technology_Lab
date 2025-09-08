@@ -26,7 +26,7 @@
            formdata1.append("sname", x);
            formdata1.append("smarks", y);
 
-           let response = await fetch("http://localhost/Testing 1st/getdata2.php", {
+           let response = await fetch("http://localhost/Testing 1st/getdata.php", {
                method: "POST",
                body: formdata1
            });
@@ -46,6 +46,7 @@
    </script>
 </body>
 </html>
+
 
 
    
