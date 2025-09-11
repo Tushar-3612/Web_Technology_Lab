@@ -1,0 +1,33 @@
+body{   
+    background-color: #6330b5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form{
+    color: White;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: red;
+    text-align: center;
+}
+
+button{
+    background-color: red;   /* default red */
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: wait;
+     
+}
+
+button:hover{
+    background-color: green;  /* hover par green ho jayega */
+     transform: scale(1.05); 
+     
+}
