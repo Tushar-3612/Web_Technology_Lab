@@ -17,7 +17,7 @@ h2{
 }
 
 button{
-    background-color: red;   /* default red */
+    background-color: red;    
     color: white;
     border: none;
     padding: 8px 14px;
@@ -27,7 +27,8 @@ button{
 }
 
 button:hover{
-    background-color: green;  /* hover par green ho jayega */
+    background-color: green;  
      transform: scale(1.05); 
      
 }
+
