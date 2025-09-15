@@ -60,3 +60,21 @@ CREATE TABLE userinfo (
 
 
 
+```
+
+---
+Option 2: phpMyAdmin (Manual)
+
+Open phpMyAdmin at http://localhost/phpmyadmin.
+
+Create a new database named info.
+
+Inside the info database, create a table named userinfo with the following structure:
+
+Column	Type	Extra
+ID	INT	AUTO_INCREMENT, PRIMARY KEY
+Name	VARCHAR(50)	NOT NULL
+Mark	INT	NOT NULL
+
+
+
