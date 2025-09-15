@@ -17,7 +17,9 @@ The application allows users to:
 ## 🗂️ Project Structure
 Assignment-4/
 │── getdata2.php # PHP backend file for DB operations
+
 │── index.html # Frontend HTML + JS file
+
 │── style.css # Styling file
 
 
