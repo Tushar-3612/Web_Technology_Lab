@@ -16,10 +16,47 @@ The application allows users to:
 
 ## 🗂️ Project Structure
 Assignment-4/
+
 │── getdata2.php # PHP backend file for DB operations
 
 │── index.html # Frontend HTML + JS file
 
 │── style.css # Styling file
+
+---
+
+
+---
+
+## ⚙️ Features
+- ✅ Insert Data (Name & Marks)
+- ✅ Delete Data (by Name)
+- ✅ Update Data (Name & Marks)
+- ✅ Display All Records (in table format)
+- ✅ Success & Error Messages with UI feedback
+
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** HTML5, CSS3, JavaScript (Fetch API)
+- **Backend:** PHP (MySQLi with prepared statements)
+- **Database:** MySQL
+
+---
+
+## 🗄️ Database Setup
+Run the following SQL commands in **MySQL**:
+
+```sql
+CREATE DATABASE info;
+
+USE info;
+
+CREATE TABLE userinfo (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Mark INT NOT NULL
+);
+
 
 
