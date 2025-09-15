@@ -6,7 +6,6 @@ body{
 form{
     color: White;
     text-align: center;
-
 }
 h1{
     text-align: center;
@@ -31,4 +30,5 @@ button:hover{
      transform: scale(1.05); 
      
 }
+
 
