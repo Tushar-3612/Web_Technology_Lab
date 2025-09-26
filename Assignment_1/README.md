@@ -43,9 +43,6 @@ The page is simple, responsive, and mobile-friendly, ensuring accessibility for 
 - 📍 **Address:** Krishi Bhavan, Taluka Kopargaon, District Ahmednagar, Maharashtra 423601  
 - 📧 **Email:** support@kisan.gov.in  
 
-
-
-
 ---
 
 ## ✅ Future Enhancements  
