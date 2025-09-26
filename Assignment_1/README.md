@@ -8,8 +8,6 @@ The page is simple, responsive, and mobile-friendly, ensuring accessibility for 
 
 🔗 **Live Demo:** [Click Here](https://web-technology-1.netlify.app/)  
 
-
-
 ---
 
 ## 🚀 Features  
