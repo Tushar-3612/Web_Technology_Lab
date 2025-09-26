@@ -12,6 +12,7 @@ The page is simple, responsive, and mobile-friendly, ensuring accessibility for 
 ---
 
 
+
 ## 🚀 Features  
 - 📢 **Scheme Highlight Section** – Showcases the crop insurance scheme and compensation benefits.  
 - 📝 **Crop Lost Report Form** – Farmers can report crop loss details.  
