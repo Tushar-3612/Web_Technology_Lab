@@ -1,4 +1,4 @@
-# 🌾 Prime Minister Crop Insurance Scheme – Homepage  
+# 🌾 Prime Minister Crop Insurance Scheme  
 
 ## 📌 Project Overview  
 This project is a **responsive homepage** designed using **HTML, CSS, and Bootstrap**.  
